@@ -1,0 +1,1486 @@
+DEBUG - 2026-06-05 04:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 04:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 04:58:56 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-07-07\', 203)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-07-07\', 203)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-07-07\', 203)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (:id_pasangan:, :nama_pasangan:, :pekerjaan_pasangan:, :tempat_lahir_pasangan:, :tanggal_lahir_pasangan:, :tempat_nikah:, :tanggal_nikah:, :id_jemaat:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(65): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(147): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 04:58:56 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 04:58:56 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 04:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 05:08:59 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-08-07\', 204)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-08-07\', 204)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'GBI Kebumen\', \'2010-08-07\', 204)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (:id_pasangan:, :nama_pasangan:, :pekerjaan_pasangan:, :tempat_lahir_pasangan:, :tanggal_lahir_pasangan:, :tempat_nikah:, :tanggal_nikah:, :id_jemaat:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(65): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 05:08:59 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 05:08:59 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 05:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 05:15:54 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 205)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 205)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'Mengurus RT\', \'Pati\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 205)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (:id_pasangan:, :nama_pasangan:, :pekerjaan_pasangan:, :tempat_lahir_pasangan:, :tanggal_lahir_pasangan:, :tempat_nikah:, :tanggal_nikah:, :id_jemaat:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(65): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 05:15:54 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 05:15:54 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 05:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 05:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 06:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:04:00 --> Unknown column 'urutan_anak' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'\', \'Djuniati\', \'5\', \'Kandung\', 207, \'2026-06-05 07:04:00\', \'2026-06-05 07:04:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'\', \'Djuniati\', \'5\', \'Kandung\', 207, \'2026-06-05 07:04:00\', \'2026-06-05 07:04:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'\', \'Djuniati\', \'5\', \'Kandung\', 207, \'2026-06-05 07:04:00\', \'2026-06-05 07:04:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (:nama_ayah:, :nama_ibu:, :urutan_anak:, :status_hubungan:, :jemaat_id:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:04:00 --> [Jemaat Store Failed] Unknown column 'urutan_anak' in 'field list'
+ERROR - 2026-06-05 07:04:00 --> [Jemaat Store] Unknown column 'urutan_anak' in 'field list'
+DEBUG - 2026-06-05 07:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:04:32 --> Unknown column 'urutan_anak' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'Liem Soe In\', \'Djuniati\', \'5\', \'Kandung\', 208, \'2026-06-05 07:04:32\', \'2026-06-05 07:04:32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'Liem Soe In\', \'Djuniati\', \'5\', \'Kandung\', 208, \'2026-06-05 07:04:32\', \'2026-06-05 07:04:32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (\'Liem Soe In\', \'Djuniati\', \'5\', \'Kandung\', 208, \'2026-06-05 07:04:32\', \'2026-06-05 07:04:32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`nama_ayah`, `nama_ibu`, `urutan_anak`, `status_hubungan`, `jemaat_id`, `created_at`, `updated_at`) VALUES (:nama_ayah:, :nama_ibu:, :urutan_anak:, :status_hubungan:, :jemaat_id:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:04:32 --> [Jemaat Store Failed] Unknown column 'urutan_anak' in 'field list'
+ERROR - 2026-06-05 07:04:32 --> [Jemaat Store] Unknown column 'urutan_anak' in 'field list'
+DEBUG - 2026-06-05 07:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 07:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:03 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem So')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem So')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem So')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:03 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem so%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem so%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem So')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:06 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:06 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe ')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe ')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:06 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe ')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:08 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe In')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe In')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe In')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:08 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%liem soe in%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Liem Soe In')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:11 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuani')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuani')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuani')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:11 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuani%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuani%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuani')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:14 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuniati')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuniati')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuniati')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:14 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%djuniati%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%djuniati%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Djuniati')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:25 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan ')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan ')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:25 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan %\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan %\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan ')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 07:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 07:48:33 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan H')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+[Method: GET, Route: jemaat/autocomplete]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan H')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan H')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 07:48:33 --> [Caused by] mysqli_sql_exception: Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE \'%iwan h%\' ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE \'%iwan h%\' ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nij`, `nama_lengkap`, `status_jemaat`, `hp1`, `pekerjaan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `pendidikan`
+FROM `tbl_jemaat`
+WHERE   (
+LOWER(`nama_lengkap`) LIKE :nama_lengkap: ESCAPE \'!\'
+OR  LOWER(`nij`) LIKE :nij: ESCAPE \'!\'
+ )
+ORDER BY `nama_lengkap` ASC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(759): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\JemaatModel.php(217): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\JemaatController.php(214): App\Models\JemaatModel->searchAutocomplete('Iwan H')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->autocomplete()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-05 08:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 09:05:14 --> Unknown column 'urutan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `urutan`, `status_hubungan`, `created_at`, `updated_at`) VALUES (209, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'5\', \'Kandung\', \'2026-06-05 09:05:14\', \'2026-06-05 09:05:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `urutan`, `status_hubungan`, `created_at`, `updated_at`) VALUES (209, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'5\', \'Kandung\', \'2026-06-05 09:05:14\', \'2026-06-05 09:05:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `urutan`, `status_hubungan`, `created_at`, `updated_at`) VALUES (209, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'5\', \'Kandung\', \'2026-06-05 09:05:14\', \'2026-06-05 09:05:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `urutan`, `status_hubungan`, `created_at`, `updated_at`) VALUES (:jemaat_id:, :ayah_id:, :nama_ayah:, :ibu_id:, :nama_ibu:, :urutan:, :status_hubungan:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(129): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 09:05:14 --> [Jemaat Store Failed] Unknown column 'urutan' in 'field list'
+ERROR - 2026-06-05 09:05:14 --> [Jemaat Store] Unknown column 'urutan' in 'field list'
+DEBUG - 2026-06-05 09:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 09:27:22 --> Unknown column 'status_hubungan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `status_hubungan`, `created_at`, `updated_at`) VALUES (210, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'Kandung\', \'2026-06-05 09:27:22\', \'2026-06-05 09:27:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `status_hubungan`, `created_at`, `updated_at`) VALUES (210, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'Kandung\', \'2026-06-05 09:27:22\', \'2026-06-05 09:27:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `status_hubungan`, `created_at`, `updated_at`) VALUES (210, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'Kandung\', \'2026-06-05 09:27:22\', \'2026-06-05 09:27:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `status_hubungan`, `created_at`, `updated_at`) VALUES (:jemaat_id:, :ayah_id:, :nama_ayah:, :ibu_id:, :nama_ibu:, :status_hubungan:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(129): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 09:27:22 --> [Jemaat Store Failed] Unknown column 'status_hubungan' in 'field list'
+ERROR - 2026-06-05 09:27:22 --> [Jemaat Store] Unknown column 'status_hubungan' in 'field list'
+DEBUG - 2026-06-05 09:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 09:32:45 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (211, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 09:32:45\', \'2026-06-05 09:32:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (211, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 09:32:45\', \'2026-06-05 09:32:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (211, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 09:32:45\', \'2026-06-05 09:32:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (:jemaat_id:, :ayah_id:, :nama_ayah:, :ibu_id:, :nama_ibu:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(128): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 09:32:45 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 09:32:45 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 09:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 09:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 09:40:39 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (212, \'\', \'Liem Soe In\', \'\', \'Djuniati\', \'2026-06-05 09:40:39\', \'2026-06-05 09:40:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (212, \'\', \'Liem Soe In\', \'\', \'Djuniati\', \'2026-06-05 09:40:39\', \'2026-06-05 09:40:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (212, \'\', \'Liem Soe In\', \'\', \'Djuniati\', \'2026-06-05 09:40:39\', \'2026-06-05 09:40:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (:jemaat_id:, :ayah_id:, :nama_ayah:, :ibu_id:, :nama_ibu:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(128): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 09:40:39 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 09:40:39 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 09:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-05 10:04:23 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (213, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 10:04:23\', \'2026-06-05 10:04:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (213, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 10:04:23\', \'2026-06-05 10:04:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (213, \'\', \'Liem Soe In, Alm.\', \'\', \'Djuniati, Almh.\', \'2026-06-05 10:04:23\', \'2026-06-05 10:04:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_orang_tua` (`jemaat_id`, `ayah_id`, `nama_ayah`, `ibu_id`, `nama_ibu`, `created_at`, `updated_at`) VALUES (:jemaat_id:, :ayah_id:, :nama_ayah:, :ibu_id:, :nama_ibu:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(128): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(146): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...], [...], [...], [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-05 10:04:23 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-05 10:04:23 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_orang_tua`, CONSTRAINT `tbl_jemaat_orang_tua_ayah_id_foreign` FOREIGN KEY (`ayah_id`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-05 10:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-05 10:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,237 @@
+ERROR - 2026-05-20 11:51:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_gereja', 3306, '', 0)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#16 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#18 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#17 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#20 {main}
+CRITICAL - 2026-05-20 11:51:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+ERROR - 2026-05-20 11:51:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_gereja', 3306, '', 0)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#16 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#18 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#17 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#20 {main}
+CRITICAL - 2026-05-20 11:51:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+ERROR - 2026-05-20 11:53:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_gereja', 3306, '', 0)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#16 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#18 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Aplikasi\siaga\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Aplikasi\siaga\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Aplikasi\siaga\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Aplikasi\siaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 D:\Aplikasi\siaga\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#8 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#10 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 D:\Aplikasi\siaga\vendor\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 D:\Aplikasi\siaga\system\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+#14 D:\Aplikasi\siaga\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+#15 D:\Aplikasi\siaga\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 D:\Aplikasi\siaga\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#17 D:\Aplikasi\siaga\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 D:\Aplikasi\siaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 D:\Aplikasi\siaga\system\rewrite.php(44): require_once('D:\\Aplikasi\\sia...')
+#20 {main}
+CRITICAL - 2026-05-20 11:53:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(214): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(56): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(62): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(27): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(33): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\CodeIgniter.php(951): CodeIgniter\Shield\Controllers\LoginController->loginView()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-05-20 11:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 11:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 11:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 11:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 11:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 11:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-20 12:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

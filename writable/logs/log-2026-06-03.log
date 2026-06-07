@@ -1,0 +1,101 @@
+DEBUG - 2026-06-03 05:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 05:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-03 07:39:46 --> ErrorException: Attempt to read property "nama_pelayanan" on array
+[Method: GET, Route: pelayanan]
+in APPPATH\Views\pelayanan\index.php on line 41.
+ 1 APPPATH\Views\pelayanan\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_pelayanan" on array', 'D:\\Aplikasi\\siaga\\app\\Views\\pelayanan\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Aplikasi\\siaga\\app\\Views\\pelayanan\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pelayanan/index', [], true)
+ 5 APPPATH\Controllers\PelayananController.php(25): view('pelayanan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PelayananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelayananController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+DEBUG - 2026-06-03 07:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 07:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-03 12:56:55 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 201)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 201)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 201)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (:id_pasangan:, :nama_pasangan:, :pekerjaan_pasangan:, :tempat_lahir_pasangan:, :tanggal_lahir_pasangan:, :tempat_nikah:, :tanggal_nikah:, :id_jemaat:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(65): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(153): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-03 12:56:55 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-03 12:56:55 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-03 12:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-03 12:57:06 --> Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 202)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 202)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (\'\', \'Mei Astuti\', \'asdsa\', \'asdas\', \'1977-05-14\', \'Kebumen\', \'2010-08-07\', 202)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat_pasangan` (`id_pasangan`, `nama_pasangan`, `pekerjaan_pasangan`, `tempat_lahir_pasangan`, `tanggal_lahir_pasangan`, `tempat_nikah`, `tanggal_nikah`, `id_jemaat`) VALUES (:id_pasangan:, :nama_pasangan:, :pekerjaan_pasangan:, :tempat_lahir_pasangan:, :tanggal_lahir_pasangan:, :tempat_nikah:, :tanggal_nikah:, :id_jemaat:)', [...], false)
+ 5 APPPATH\Models\JemaatModel.php(65): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JemaatController.php(153): App\Models\JemaatModel->simpanJemaatKomplit(Object(App\Entities\Jemaat), [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\JemaatController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JemaatController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Aplikasi\\siaga\\public\\index.php')
+CRITICAL - 2026-06-03 12:57:06 --> [Jemaat Store Failed] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+ERROR - 2026-06-03 12:57:06 --> [Jemaat Store] Cannot add or update a child row: a foreign key constraint fails (`db_gereja`.`tbl_jemaat_pasangan`, CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat` (`id`) ON DELETE CASCADE ON UPDATE SET NULL)
+DEBUG - 2026-06-03 12:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-03 12:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

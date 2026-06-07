@@ -1,0 +1,86 @@
+ERROR - 2026-05-08 08:48:34 --> Can't create table `db_gereja`.`tbl_jemaat_pasangan` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `tbl_jemaat_pasangan` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_jemaat` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat utama\',
+	`id_pasangan` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat pasangan (opsional)\',
+	`nama_pasangan` VARCHAR(100) NOT NULL,
+	`tempat_lahir_pasangan` VARCHAR(100) NULL,
+	`tanggal_lahir_pasangan` DATE NULL,
+	`pekerjaan_pasangan` VARCHAR(100) NULL,
+	`tanggal_nikah` DATE NULL,
+	`tempat_nikah` VARCHAR(150) NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updated_at` DATETIME NULL,
+	`deleted_at` DATETIME NULL,
+	CONSTRAINT `pk_tbl_jemaat_pasangan` PRIMARY KEY(`id`),
+	CONSTRAINT `tbl_jemaat_pasangan_id_jemaat_foreign` FOREIGN KEY (`id_jemaat`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE SET NULL
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `tbl_jemaat_pasangan` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_jemaat` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat utama\',
+	`id_pasangan` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat pasangan (opsional)\',
+	`nama_pasangan` VARCHAR(100) NOT NULL,
+	`tempat_lahir_pasangan` VARCHAR(100) NULL,
+	`tanggal_lahir_pasangan` DATE NULL,
+	`pekerjaan_pasangan` VARCHAR(100) NULL,
+	`tanggal_nikah` DATE NULL,
+	`tempat_nikah` VARCHAR(150) NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updated_at` DATETIME NULL,
+	`deleted_at` DATETIME NULL,
+	CONSTRAINT `pk_tbl_jemaat_pasangan` PRIMARY KEY(`id`),
+	CONSTRAINT `tbl_jemaat_pasangan_id_jemaat_foreign` FOREIGN KEY (`id_jemaat`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE SET NULL
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `tbl_jemaat_pasangan` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_jemaat` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat utama\',
+	`id_pasangan` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat pasangan (opsional)\',
+	`nama_pasangan` VARCHAR(100) NOT NULL,
+	`tempat_lahir_pasangan` VARCHAR(100) NULL,
+	`tanggal_lahir_pasangan` DATE NULL,
+	`pekerjaan_pasangan` VARCHAR(100) NULL,
+	`tanggal_nikah` DATE NULL,
+	`tempat_nikah` VARCHAR(150) NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updated_at` DATETIME NULL,
+	`deleted_at` DATETIME NULL,
+	CONSTRAINT `pk_tbl_jemaat_pasangan` PRIMARY KEY(`id`),
+	CONSTRAINT `tbl_jemaat_pasangan_id_jemaat_foreign` FOREIGN KEY (`id_jemaat`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE SET NULL
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `tbl_jemaat_pasangan` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_jemaat` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat utama\',
+	`id_pasangan` INT(11) UNSIGNED NOT NULL COMMENT \'FK ke jemaat pasangan (opsional)\',
+	`nama_pasangan` VARCHAR(100) NOT NULL,
+	`tempat_lahir_pasangan` VARCHAR(100) NULL,
+	`tanggal_lahir_pasangan` DATE NULL,
+	`pekerjaan_pasangan` VARCHAR(100) NULL,
+	`tanggal_nikah` DATE NULL,
+	`tempat_nikah` VARCHAR(150) NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updated_at` DATETIME NULL,
+	`deleted_at` DATETIME NULL,
+	CONSTRAINT `pk_tbl_jemaat_pasangan` PRIMARY KEY(`id`),
+	CONSTRAINT `tbl_jemaat_pasangan_id_jemaat_foreign` FOREIGN KEY (`id_jemaat`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT `tbl_jemaat_pasangan_id_pasangan_foreign` FOREIGN KEY (`id_pasangan`) REFERENCES `tbl_jemaat`(`id`) ON DELETE CASCADE ON UPDATE SET NULL
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-05-08-100000_CreateJemaatModuleTables.php(146): CodeIgniter\Database\Forge->createTable('tbl_jemaat_pasangan', true, [...])
+ 6 APPPATH\Database\Migrations\2026-05-08-100000_CreateJemaatModuleTables.php(19): App\Database\Migrations\CreateJemaatModuleTables->createTblJemaatPasangan()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateJemaatModuleTables->up()
+ 8 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 9 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+10 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+11 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+12 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))

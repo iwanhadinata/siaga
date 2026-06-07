@@ -1,0 +1,3 @@
+'username' => 'superadmin',
+'email'    => 'admin@gereja.local', 
+'password' => 'RahasiaGereja2026!'
